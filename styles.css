@@ -1,0 +1,168 @@
+:root {
+    --content-padding: 30px;
+    --content-font: 'Times New Roman', Times, serif;
+    --pwdNotMatch: none;  
+     
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+ 
+    
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+  }
+  
+.container {
+    display: flex;
+    
+    
+ 
+} 
+
+.container > div {
+
+    min-height: 100vh;
+    
+}
+.side-pane {
+
+    
+    background-image: url(./images/leaves.avif);
+    background-size: cover;
+    min-width: 30vw;
+    position: relative ;
+    
+    
+   
+
+}
+
+.logo {
+
+    position: absolute;
+    width: 100%;
+    height: 100px; 
+    background-color: black;
+    opacity: 0.6;
+    font-family: norse-bold;
+    color: white; 
+    font-size: 5em;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    z-index: 1; 
+    top: 8rem;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.logo img {
+    width: 80px;
+    height: 100px;
+}
+
+.right-pane {    
+  
+ 
+    background-color: #f0f8ff;
+
+
+    
+}
+
+.msg {
+
+    font-family: var(--content-font);
+    font-weight: bold; 
+    font-size: 1.2em; 
+    
+    
+}
+.right-pane > div {
+
+    padding: var(--content-padding);
+    
+    
+    
+}
+
+
+.content {
+
+    background-color: white;
+    box-shadow: 2px 2px 2px grey; 
+   
+    
+}
+
+
+.form-entry {
+    display:flex; 
+    gap: 50px;
+}
+
+.left-form label, .right-form label {
+
+    font-family: var(--content-font);
+    font-size: 0.7em;
+    
+}
+
+
+.left-form::after {
+    content: "Password Dont Match";
+    color: red; 
+    
+    display: var(--pwdNotMatch);
+}
+
+.sign-up p:first-child {
+    font-family: var(--content-font);
+    font-weight: bold;
+    font-size: 1.2em; 
+}
+
+input {
+
+    padding: 5px 25px 5px 5px; 
+    border-color: #E5E7EB;
+    border-radius: 5px;
+}
+
+
+
+input:invalid {
+    border-color: red ;   
+}
+
+input:focus {
+    border-color: blue; 
+    box-shadow: 2px 2px 2px green;
+}
+button {
+    background-color: #596D48;
+    font-family: var(--content-font);
+    font-size: 1.5em;
+    padding: 10px 40px 10px 30px;
+    border-radius: 10px;
+    color: white; 
+}
+
+.have-account {
+    font-family: var(--content-font)
+}
+.login {
+    color: green; 
+    
+}
+a{
+    text-decoration: none;
+}
+
